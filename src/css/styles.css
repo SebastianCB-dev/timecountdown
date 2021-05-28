@@ -1,0 +1,113 @@
+body {
+    background-color: #1E2140;
+}
+
+#container .title{
+    margin-top: 90px;
+}
+#container .title h1, #container .title h2 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(170, 40, 40);
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+#container .title h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#container .title h2 {
+    font-size: 25px;
+}
+#container .countdown {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.65);
+    border: 5px solid #fff;
+    border-radius: 100%;
+    margin: 0px auto;
+    margin-top: 80px;
+    
+}
+#container .countdown p{
+    text-align: center;
+    line-height: 250px;
+    font-size: 80px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+#container .buttons {
+    display: flex;
+    justify-content: center;
+}
+#container .buttons button{
+   display: block;
+   width: 100px;
+   padding: 10px;
+   background-color: #000;
+   color: #fff;
+   text-align: center;
+   border: 2px solid #ccc;
+   margin-right: 10px;
+   font-family: 'Roboto', sans-serif;
+   transition: all 300ms;
+   cursor: pointer;
+}
+#container .buttons button:hover{
+    transform: scale(1.05, 1.05);
+}
+#container .buttons {
+    margin-top: 40px;
+}
+
+#container .buttons #button-pause, #container .buttons #button-reagain, #container .buttons #button-reset, #container .buttons #button-vuelta{
+    display: none;
+}
+#container .vueltas {
+    width: 400px;
+    margin: 0px auto;
+}
+
+#container .vueltas .title p {
+    color : #fff;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+#container .vueltas #info-vueltas {
+    border: 2px solid #ccc;
+    padding: 40px;
+    height: 600px;
+    overflow-y: auto;
+    border-radius: 7px;
+    margin-bottom: 60px;
+}
+
+#container .vueltas #info-vueltas p{
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color : #ccc;
+}
+
+@media(max-width: 412px) {
+    #container .vueltas {
+        width: 100%;        
+    }
+    #container .countdown {
+        width: 260px;
+        height: 260px;
+    }
+    #container .countdown p{
+        font-size: 40px;   
+        line-height: 190px;
+    }
+    #container .title h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    #container .title h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+}
